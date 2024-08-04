@@ -1,0 +1,45 @@
+body {
+    font-family: 'Vazirmatn', Arial, sans-serif;
+    background-color: #1a1a1a; /* رنگ پس‌زمینه تیره */
+    color: white;
+    direction: rtl;
+    text-align: right;
+}
+
+.container {
+    margin-top: 50px;
+    background-color: #0a3d62; /* رنگ آبی تیره */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    color: #f8c291; /* رنگ نارنجی */
+}
+
+.header p {
+    font-size: 1.2em;
+    color: #f8c291; /* رنگ نارنجی */
+}
+
+.btn-telegram {
+    background-color: #3c6382; /* رنگ آبی متوسط */
+    color: white;
+    margin-top: 20px;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+
+.btn-telegram:hover {
+    background-color: #0a3d62; /* رنگ آبی تیره */
+    color: #f8c291; /* رنگ نارنجی */
+}

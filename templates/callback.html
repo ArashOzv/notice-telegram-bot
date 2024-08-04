@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>وضعیت پرداخت</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            {% if status == 'OK' %}
+            <h1>پرداخت شما انجام شد!</h1>
+            <p>کد پیگیری شما: {{ref_id}}</p>
+            {% else %}
+            <h1 style="color: red;">روند پرداخت با خطا مواجه شد!</h1>
+            <p>کد پیگیری شما جهت اعلام به پشتیبانی: {{ref_id}}</p>
+            {% endif %}
+            <p></p>
+        </div>
+        <div class="text-center">
+            <a href="https://t.me/farhangi_wall_bot" class="btn btn-telegram btn-lg" role="button" target="_blank">
+                بازگشت به ربات
+            </a>
+        </div>
+    </div>
+</body>
+</html>
